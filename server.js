@@ -23,7 +23,7 @@ connectDB();
 
 // Enable CORS for frontend (CRITICAL!)
 app.use(cors({
-  origin: ['https://civicsnapp.netlify.app/', 'http://localhost:3000'],
+  origin: ['http://localhost:5173', 'http://localhost:3000'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials: true
 }));
@@ -78,5 +78,5 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
   console.log(`📚 API documentation: http://localhost:${PORT}/`);
-  console.log(`🌐 CORS enabled for: https://civicsnapp.netlify.app/`);
+  console.log(`🌐 CORS enabled for: http://localhost:5173`);
 });
