@@ -78,5 +78,5 @@ app.use(errorHandler);
 app.listen(PORT, () => {
   console.log(`✅ Server running on http://localhost:${PORT}`);
   console.log(`📚 API documentation: http://localhost:${PORT}/`);
-  console.log(`🌐 CORS enabled for: http://localhost:5173`);
+  console.log(`🌐 CORS enabled for: https://civicsnapp.netlify.app/`);
 });
