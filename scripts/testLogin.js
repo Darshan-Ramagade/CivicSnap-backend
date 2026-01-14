@@ -5,7 +5,7 @@ const testLogin = async () => {
   try {
     console.log('🧪 Testing login...');
     
-    const response = await axios.post('http://localhost:5000/api/auth/login', {
+    const response = await axios.post('https://civicsnap.onrender.com', {
       email: 'admin@civicmapper.com',
       password: 'admin123'
     });
