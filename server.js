@@ -23,7 +23,7 @@ connectDB();
 
 // Enable CORS for frontend (CRITICAL!)
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:3000'],
+  origin: ['https://civicsnapp.netlify.app/', 'http://localhost:3000'],
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
   credentials: true
 }));
